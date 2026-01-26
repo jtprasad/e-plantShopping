@@ -9,8 +9,8 @@ export const CartSlice = createSlice({
     addItem: (state, action) => {
       const { name, image, cost } = action.payload;                                                       // destructure prod details from action payload
       const existingItem = state.items.find(item => item.name === name);                                  // compare items to check if item exists in cart
-      if (exisitingItem) {                                                                                // increase quantity if item exists
-        exisitingItem.quantity++;
+      if (existingItem) {                                                                                 // increase quantity if item exists
+        existingItem.quantity++;
       } else {                                                                                            // add to cart with 1 quantity if it does not exist
         state.items.push({ name, image, cost, quantity: 1 });
       }
