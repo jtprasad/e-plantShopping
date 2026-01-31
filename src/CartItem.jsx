@@ -25,7 +25,7 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleCheckoutShopping = (e) => {
-    alert('Functionality to be added for future reference');
+    alert("Pysch! I don't have any plants for sale.");
   };
 
   const handleIncrement = (item) => {
